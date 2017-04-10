@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="se-pre-con"></div>
     <div class="row" id="searchbox">
         <!-- Validation -->
         <div class="form-group col-lg-12">
             <div class="form-group has-feedback icon-addon addon-lg">
-                <input id="search-textbox" type="text" class="form-control controls typeahead tt-query" autocomplete="off" spellcheck="false" id="pac-input" placeholder="Search EF Destinations" />
+                <input id="search-textbox" type="text" class="form-control controls typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="Search EF Destinations" />
 
             </div>
         </div>
@@ -89,7 +90,7 @@
                     <button type="button" class="btn-primary" onclick="Moreinfo()" data-toggle="tooltip" data-placement="top" title="More Info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
                 </div>
             </div>
-            <div id="streetViewContent" style=" background: lightpink; height: 320px; width:595px ;display: none">
+            <div id="streetViewContent" style="background: lightpink; height: 320px; width:595px ;display: none">
 
             </div>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -108,32 +109,32 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
 
-                        <img data-original="./images/Boston1.jpg" src="images/thumbnails/Boston1.jpg" width="650" height="320" alt="Cuo Na Lake">
+                        <img data-original="./images/Boston1.jpg" src="images/thumbnails/1.jpg" width="650" height="320" alt="Cuo Na Lake">
 
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-2.jpg" src="images/thumbnails/tibet-2.jpg" width="650" height="320" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-2.jpg" src="images/thumbnails/Boston1.jpg" width="650" height="320" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-3.jpg" src="images/thumbnails/tibet-3.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-3.jpg" src="images/thumbnails/2.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-4.jpg" src="images/thumbnails/tibet-4.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-4.jpg" src="images/thumbnails/3.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-5.jpg" src="images/thumbnails/tibet-5.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-5.jpg" src="images/thumbnails/4.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-6.jpg" src="images/thumbnails/tibet-6.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-6.jpg" src="images/thumbnails/5.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-7.jpg" src="images/thumbnails/tibet-7.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-7.jpg" src="images/thumbnails/6.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-8.jpg" src="images/thumbnails/tibet-8.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-8.jpg" src="images/thumbnails/7.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                     <div class="item">
-                        <img data-original="./images/tibet-9.jpg" src="images/thumbnails/tibet-9.jpg" width="590" height="300" alt="Cuo Na Lake">
+                        <img data-original="./images/tibet-9.jpg" src="images/thumbnails/8.jpg" width="590" height="300" alt="Cuo Na Lake">
                     </div>
                 </div>
 
@@ -148,14 +149,16 @@
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="js/viewer.js"></script>
     <script src="js/main.js"></script>
     <script src="js/typeahead.js"></script>
     <script src="js/MapsApp.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7tOa2ATwEK1Wj_689CMsNoyictPJewfA&callback=initMap&libraries=places">
     </script>

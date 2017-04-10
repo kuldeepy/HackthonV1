@@ -57,6 +57,11 @@ var destinations = [
 
 var map;
 
+window.onload=function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+};
+
 function initMap() {
     var markers = [];
     $('#userNavProgram').hide();
@@ -154,9 +159,9 @@ function drop() {
         addMarkerWithTimeout(neighborhoods[i], i * 200);
     }
 }
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
+//$(function () {
+//    $('[data-toggle="tooltip"]').tooltip()
+//})
 function addMarkerWithTimeout(position, timeout) {
     window.setTimeout(function () {
         markers.push(new google.maps.Marker({
@@ -248,8 +253,10 @@ function GoBack(slideto, slidefrom) {
 }
 
 function Moreinfo() {
-    var e = document.getElementById('Pgmlst');
-    var SelectedProgram = e.options[e.selectedIndex].text
+    var SelectedProgram = $('#Pgmlst option:selected').text();
+    var SelectedCourse = $('#CourseDDL option:selected').text();
+    //var e = document.getElementById('Pgmlst');
+    //var SelectedProgram = e.options[e.selectedIndex].text
     if (SelectedProgram == "AY") {
         if (SelectedCourse == "LANGUAGE") {
             window.open('http://www.ef.com/aya/programmes/language-programmes/', "_blank");
@@ -270,8 +277,9 @@ function Moreinfo() {
 }
 
 function Book() {
-    var e = document.getElementById('Pgmlst');
-    var SelectedProgram = e.options[e.selectedIndex].text;
+    var SelectedProgram = $('#Pgmlst option:selected').text();
+
+    //var SelectedProgram = e.options[e.selectedIndex].text;
     if (SelectedProgram == "AY") {
         window.open('http://www.ef.com/aya/book-now/', "_blank");
     }
